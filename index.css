@@ -1,0 +1,149 @@
+/* ----Vanlig css----- */
+*{
+    padding: 0;
+    margin: 0;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+    font-family: 'Dosis', sans-serif;
+}
+.none{
+    display: none;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* ---------katten og hatter----------*/
+.katt{
+    position: absolute;
+    top: 33vh;
+    left: 7vw;
+    height: 550px;
+    width: 650px;
+    background-size: cover;
+}
+
+.hatter{
+    position: absolute;
+
+    background-size: cover;
+}
+
+/* --------mainDisp--------- */
+.mainDisp{
+    height: 100vh;
+    width: 100vw;
+    background-color: pink;
+}
+
+.tittel{
+    color: rgb(58, 42, 42);
+    text-align: center;
+    padding-top: 1em;
+
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+/* ----Div for knappene---- */
+.knappDivs{
+    position: absolute;
+    top: 15vh;
+    left: 65vw;
+    height: 750px;
+    width: 550px;
+
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 35px;
+}
+/* ----Div for hovedknappene---- */
+.hattOgFargeDiv{
+    width: 100%;
+    height: 200px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+/* ----Style for hovedknappene---- */
+.hattOgFargeDiv >  div{
+    display: inline-block;
+    height: 150px;
+    width: 200px;
+    background-color: rgb(227, 150, 150);
+    display: grid;
+    place-items: center;
+    border-radius: 25px;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* ----Div for valgene---- */
+.hattDiv, .fargeDiv{
+    width: 100%;
+    height: 550px;
+}
+.hattOgFargeDiv >  div:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+.hattOgFargeDiv >  div:active{
+    transform: scale(1.2);
+}
+/* ----Style for farge valgene---- */
+.fargeDiv{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+}
+.fargeDiv > div{
+    display: inline-block;
+    height: 150px;
+    width: 200px;
+    border-radius: 25px;
+}
+
+.blaa{
+    background-color: rgb(78, 117, 194);
+}
+.graa{
+    background-color: grey;
+}
+.rosa{
+    background-color: pink;
+}
+
+.fargeDiv > div:hover{
+    cursor: pointer;
+    transform: scale(1.2);  
+}
+.fargeDiv > div:active{
+    transform: scale(0.9);  
+}
+/* ----Style for hatt valgene---- */
+.hattDiv{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+}
+.hattDiv > div{
+    display: grid;
+    place-items: center;
+    height: 150px;
+    width: 200px;
+    border-radius: 25px;
+    font-size: 2rem;
+    background-color: grey;
+    color: white;
+    font-weight: 500;
+}
+
+.hattDiv > div:hover{
+    cursor: pointer;
+    transform: scale(1.2);  
+}
+.hattDiv > div:active{
+    transform: scale(0.9);  
+}
